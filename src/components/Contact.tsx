@@ -5,7 +5,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
-  const { ref, isInView } = useScrollAnimation();
+  const { ref } = useScrollAnimation();
   const { t } = useTranslation();
 
   return (

@@ -83,7 +83,7 @@ const skillCategories = [
 ];
 
 const Skills = () => {
-  const { ref, isInView } = useScrollAnimation();
+  const { ref } = useScrollAnimation();
   const { t } = useTranslation();
 
   return (
