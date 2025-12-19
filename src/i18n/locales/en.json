@@ -1,0 +1,109 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "experience": "Experience",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hi, I'm",
+        "name": "Thang",
+        "buildText": "I build",
+        "exceptional": "exceptional",
+        "digital": "digital",
+        "experiences": "experiences",
+        "subtitle": "Front-end specialist with expertise in",
+        "vr": "3D/VR interfaces",
+        "realtime": "real-time systems",
+        "monorepo": "monorepo architecture",
+        "currentWork": "Currently building virtual exhibition platforms at Arobid.",
+        "viewWork": "View my work",
+        "downloadCV": "Download CV",
+        "openToWork": "Open to work",
+        "stats": "stats.tsx",
+        "connect": "// connect",
+        "currentRole": "// current role",
+        "frontEnd": "Front-End Developer",
+        "buildingTradexpo": "Building TRADEXPO",
+        "techStack": "// tech stack",
+        "scroll": "scroll"
+    },
+    "stats": {
+        "components": "React Components",
+        "apps": "Apps in Monorepo",
+        "codeReuse": "Code Reuse Rate",
+        "languages": "Languages (i18n)"
+    },
+    "about": {
+        "title": "About Me",
+        "sectionLabel": "// about",
+        "bio": "Front-end Developer with 1+ year of experience building enterprise-grade applications. Passionate about crafting high-performance UIs with cutting-edge technologies.",
+        "education": "Education",
+        "university": "FPT University",
+        "degree": "Software Engineering",
+        "yearsExp": "Years Experience",
+        "companies": "Companies",
+        "expertise": {
+            "title": "Areas of Expertise",
+            "vr": {
+                "title": "3D/VR Development",
+                "desc": "Building immersive 360° VR experiences with Marzipano, interactive hotspots, and virtual exhibition booths."
+            },
+            "realtime": {
+                "title": "Real-time Systems",
+                "desc": "WebSocket integration, optimistic updates, live streaming with Zoom SDK, and real-time notifications."
+            },
+            "monorepo": {
+                "title": "Monorepo Architecture",
+                "desc": "Scaling 15+ apps with Turborepo & PNPM, 70% code reuse rate, shared component libraries."
+            },
+            "performance": {
+                "title": "Performance Optimization",
+                "desc": "SSR/SSG strategies, 40% load time reduction, Lighthouse 90+ scores, code splitting & lazy loading."
+            }
+        }
+    },
+    "experience": {
+        "title": "Work Experience",
+        "sectionLabel": "// experience",
+        "present": "Present",
+        "viewProject": "View Project",
+        "keyHighlights": "Key Highlights",
+        "techStack": "Tech Stack"
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "sectionLabel": "// projects",
+        "viewLive": "View Live",
+        "viewCode": "View Code",
+        "features": "Features"
+    },
+    "skills": {
+        "title": "Skills & Technologies",
+        "sectionLabel": "// skills",
+        "core": "Core Technologies",
+        "architecture": "Architecture",
+        "specialization": "Specialization",
+        "stateManagement": "State Management",
+        "testing": "Testing",
+        "other": "Other"
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "sectionLabel": "// contact",
+        "subtitle": "I'm currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "sendMessage": "Send Message",
+        "copied": "Copied!",
+        "clickToCopy": "Click to copy"
+    },
+    "footer": {
+        "madeWith": "Made with",
+        "by": "by",
+        "copyright": "All rights reserved."
+    }
+}

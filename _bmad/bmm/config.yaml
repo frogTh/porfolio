@@ -1,0 +1,19 @@
+# BMAD Method Project Configuration
+# Portfolio Website - Pham Huynh Quoc Thang
+
+# User Configuration
+user_name: "Thang Pham"
+communication_language: "vi"
+document_output_language: "en"
+
+# Project Configuration
+project_name: "Portfolio Website"
+user_skill_level: "expert"
+
+# Output Paths
+output_folder: "_bmad/bmm/output"
+sprint_artifacts: "_bmad/bmm/sprint-artifacts"
+project_knowledge: "docs"
+
+# Story Location (for sprint-planning workflow)
+story_location: "_bmad/bmm/sprint-artifacts"

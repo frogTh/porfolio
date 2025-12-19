@@ -1,0 +1,109 @@
+{
+    "nav": {
+        "home": "Trang chủ",
+        "about": "Giới thiệu",
+        "experience": "Kinh nghiệm",
+        "projects": "Dự án",
+        "skills": "Kỹ năng",
+        "contact": "Liên hệ"
+    },
+    "hero": {
+        "greeting": "Xin chào, tôi là",
+        "name": "Thắng",
+        "buildText": "Tôi xây dựng",
+        "exceptional": "những trải nghiệm",
+        "digital": "kỹ thuật số",
+        "experiences": "tuyệt vời",
+        "subtitle": "Chuyên gia Front-end với chuyên môn về",
+        "vr": "giao diện 3D/VR",
+        "realtime": "hệ thống thời gian thực",
+        "monorepo": "kiến trúc monorepo",
+        "currentWork": "Hiện đang xây dựng nền tảng triển lãm ảo tại Arobid.",
+        "viewWork": "Xem dự án",
+        "downloadCV": "Tải CV",
+        "openToWork": "Sẵn sàng làm việc",
+        "stats": "stats.tsx",
+        "connect": "// kết nối",
+        "currentRole": "// vai trò hiện tại",
+        "frontEnd": "Lập trình viên Front-End",
+        "buildingTradexpo": "Đang xây dựng TRADEXPO",
+        "techStack": "// công nghệ",
+        "scroll": "cuộn"
+    },
+    "stats": {
+        "components": "React Components",
+        "apps": "Apps trong Monorepo",
+        "codeReuse": "Tỷ lệ tái sử dụng code",
+        "languages": "Ngôn ngữ (i18n)"
+    },
+    "about": {
+        "title": "Về tôi",
+        "sectionLabel": "// giới thiệu",
+        "bio": "Lập trình viên Front-end với hơn 1 năm kinh nghiệm xây dựng ứng dụng cấp doanh nghiệp. Đam mê tạo ra các giao diện hiệu suất cao với công nghệ tiên tiến.",
+        "education": "Học vấn",
+        "university": "Đại học FPT",
+        "degree": "Kỹ thuật Phần mềm",
+        "yearsExp": "Năm kinh nghiệm",
+        "companies": "Công ty",
+        "expertise": {
+            "title": "Lĩnh vực chuyên môn",
+            "vr": {
+                "title": "Phát triển 3D/VR",
+                "desc": "Xây dựng trải nghiệm VR 360° với Marzipano, hotspot tương tác và gian hàng triển lãm ảo."
+            },
+            "realtime": {
+                "title": "Hệ thống thời gian thực",
+                "desc": "Tích hợp WebSocket, optimistic updates, live streaming với Zoom SDK và thông báo thời gian thực."
+            },
+            "monorepo": {
+                "title": "Kiến trúc Monorepo",
+                "desc": "Mở rộng 15+ ứng dụng với Turborepo & PNPM, tỷ lệ tái sử dụng code 70%, thư viện component dùng chung."
+            },
+            "performance": {
+                "title": "Tối ưu hiệu suất",
+                "desc": "Chiến lược SSR/SSG, giảm 40% thời gian tải, điểm Lighthouse 90+, code splitting & lazy loading."
+            }
+        }
+    },
+    "experience": {
+        "title": "Kinh nghiệm làm việc",
+        "sectionLabel": "// kinh nghiệm",
+        "present": "Hiện tại",
+        "viewProject": "Xem dự án",
+        "keyHighlights": "Điểm nổi bật",
+        "techStack": "Công nghệ"
+    },
+    "projects": {
+        "title": "Dự án nổi bật",
+        "sectionLabel": "// dự án",
+        "viewLive": "Xem trực tiếp",
+        "viewCode": "Xem code",
+        "features": "Tính năng"
+    },
+    "skills": {
+        "title": "Kỹ năng & Công nghệ",
+        "sectionLabel": "// kỹ năng",
+        "core": "Công nghệ cốt lõi",
+        "architecture": "Kiến trúc",
+        "specialization": "Chuyên môn",
+        "stateManagement": "Quản lý State",
+        "testing": "Testing",
+        "other": "Khác"
+    },
+    "contact": {
+        "title": "Liên hệ",
+        "sectionLabel": "// liên hệ",
+        "subtitle": "Tôi hiện đang sẵn sàng cho các cơ hội mới. Dù bạn có câu hỏi hay chỉ muốn chào hỏi, hãy liên hệ với tôi!",
+        "email": "Email",
+        "phone": "Điện thoại",
+        "location": "Địa điểm",
+        "sendMessage": "Gửi tin nhắn",
+        "copied": "Đã sao chép!",
+        "clickToCopy": "Click để sao chép"
+    },
+    "footer": {
+        "madeWith": "Được tạo với",
+        "by": "bởi",
+        "copyright": "Đã đăng ký bản quyền."
+    }
+}
