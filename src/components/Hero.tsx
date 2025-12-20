@@ -112,9 +112,12 @@ const Hero = () => {
             className="lg:col-span-4 bento-card p-6 flex flex-col justify-between"
           >
             <div>
-              <div className="flex items-center gap-2 mb-6">
-                <HiSparkles className="text-cyan-400" />
-                <span className="text-zinc-400 text-sm font-mono">{t('hero.stats')}</span>
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-white mb-1 flex items-center gap-2">
+                  <HiSparkles className="text-cyan-400" />
+                  {t('hero.stats')}
+                </h3>
+                <p className="text-zinc-500 text-sm">{t('hero.statsSubtitle')}</p>
               </div>
               
               <div className="space-y-6">
