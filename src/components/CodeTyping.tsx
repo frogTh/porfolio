@@ -28,9 +28,10 @@ const tokenizeLine = (line: string): Token[] => {
     const patterns: [RegExp, string][] = [
         // Comments first (highest priority)
         [/^(\/\/.*)/, 'text-zinc-500 italic'],
-        // Strings
-        [/^(["'`])(?:[^\1\\]|\\.)*?\1/, 'text-green-400'],
-        [/^(["'])(?:[^\1\\]|\\.)*?\1/, 'text-green-400'],
+        // Strings (separate patterns for each quote type)
+        [/^`(?:[^`\\]|\\.)*?`/, 'text-green-400'],
+        [/^"(?:[^"\\]|\\.)*?"/, 'text-green-400'],
+        [/^'(?:[^'\\]|\\.)*?'/, 'text-green-400'],
         // Keywords
         [/^(const|let|var|function|return|import|export|from|default|async|await|if|else|for|while|class|extends|interface|type|enum|true|false|null|undefined|new|this|super|static|public|private|protected|readonly)\b/, 'text-purple-400'],
         // Numbers
