@@ -1,18 +1,11 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaArrowRight, FaDownload } from 'react-icons/fa';
-import { HiSparkles } from 'react-icons/hi';
 import { useTranslation } from 'react-i18next';
-import { personalInfo, stats } from '../data/data';
+import { personalInfo } from '../data/data';
+import CodeTyping from './CodeTyping';
 
 const Hero = () => {
   const { t } = useTranslation();
-
-  const statLabels: Record<string, string> = {
-    'React Components': t('stats.components'),
-    'Apps in Monorepo': t('stats.apps'),
-    'Code Reuse Rate': t('stats.codeReuse'),
-    'Languages (i18n)': t('stats.languages'),
-  };
 
   return (
     <section id="home" className="min-h-screen relative overflow-hidden grid-pattern">
@@ -24,22 +17,22 @@ const Hero = () => {
         {/* Large gradient orb */}
         <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-cyan-500/20 to-purple-500/20 blur-[120px] animate-pulse-glow" />
         <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-purple-500/15 to-pink-500/15 blur-[100px] animate-pulse-glow" />
-        
+
         {/* Floating geometric shapes */}
-        <motion.div 
+        <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           className="absolute top-20 right-[20%] w-20 h-20 border border-cyan-500/20 rounded-lg"
         />
-        <motion.div 
+        <motion.div
           animate={{ rotate: -360 }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
           className="absolute bottom-40 left-[15%] w-16 h-16 border border-purple-500/20 rounded-full"
         />
-        <motion.div 
+        <motion.div
           className="absolute top-1/3 left-[10%] w-3 h-3 bg-cyan-400 rounded-full animate-float"
         />
-        <motion.div 
+        <motion.div
           className="absolute top-1/2 right-[10%] w-2 h-2 bg-purple-400 rounded-full animate-float-slow"
         />
       </div>
@@ -47,7 +40,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 py-20 relative z-10">
         {/* Bento Grid Layout */}
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 pt-20">
-          
+
           {/* Main Hero Card - spans 8 columns */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -56,7 +49,7 @@ const Hero = () => {
             className="lg:col-span-8 bento-card p-8 md:p-12"
           >
             {/* Status badge */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
@@ -93,8 +86,8 @@ const Hero = () => {
                 <span>{t('hero.viewWork')}</span>
                 <FaArrowRight />
               </a>
-              <a 
-                href="/Resume-ThangPHQ.pdf" 
+              <a
+                href="/Resume-ThangPHQ.pdf"
                 download
                 className="btn-neon"
               >
@@ -104,38 +97,34 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* Stats Card - spans 4 columns */}
+          {/* Code Animation Card - spans 4 columns (right side of hero) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-4 bento-card p-6 flex flex-col justify-between"
+            className="lg:col-span-4"
           >
-            <div>
-              <div className="mb-6">
-                <h3 className="text-xl font-bold text-white mb-1 flex items-center gap-2">
-                  <HiSparkles className="text-cyan-400" />
-                  {t('hero.stats')}
-                </h3>
-                <p className="text-zinc-500 text-sm">{t('hero.statsSubtitle')}</p>
-              </div>
-              
-              <div className="space-y-6">
-                {stats.map((stat, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.4 + index * 0.1 }}
-                    className="flex items-center justify-between"
-                  >
-                    <span className="text-zinc-500 text-sm">{statLabels[stat.label] || stat.label}</span>
-                    <span className="text-2xl md:text-3xl font-bold gradient-text">{stat.value}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
+            <CodeTyping
+              code={`// Hello World! 🚀
+const dev = {
+  name: 'Thang Pham',
+  role: 'Frontend Engineer',
+  skills: [
+    'React', 'TypeScript',
+    'Next.js', 'Turborepo'
+  ]
+};
+
+export default dev;`}
+              fileName="developer.ts"
+              language="typescript"
+              typingSpeed={600}
+              startDelay={800}
+              className="h-full"
+            />
           </motion.div>
+
+          {/* Row 2: Social Links + Experience + Tech Stack (4+4+4) */}
 
           {/* Social Links Card */}
           <motion.div
@@ -204,7 +193,7 @@ const Hero = () => {
         </div>
 
         {/* Scroll indicator */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
