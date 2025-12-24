@@ -118,7 +118,7 @@ const dev = {
 export default dev;`}
               fileName="developer.ts"
               language="typescript"
-              typingSpeed={600}
+              typingSpeed={360}
               startDelay={800}
               className="h-full"
             />
